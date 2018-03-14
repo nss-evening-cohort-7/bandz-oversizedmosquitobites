@@ -1,5 +1,22 @@
-body{
-  background:lightskyblue;
-}
-
 @import url('https://fonts.googleapis.com/css?family=New+Rocker|Roboto');
+
+body {
+  background:peachpuff;
+  font-family: Roboto;
+}
+/***********************************
+
+  Footer Styles
+
+************************************/
+.footer {
+  text-align: center;
+  border-top: 2px solid red;
+}
+.footer-icons {
+  margin: 10px 0;
+}
+.footer-icons img {
+  margin: 10px;
+  max-width: 30px;
+}
