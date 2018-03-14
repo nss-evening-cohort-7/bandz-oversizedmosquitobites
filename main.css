@@ -4,6 +4,45 @@ body {
   background:peachpuff;
   font-family: Roboto;
 }
+/*****************************************
+  
+  Nav Bar Styles
+
+******************************************/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid red;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo {
+  max-width: 30px;
+  margin-right: 15px;
+}
+.navbar-heading {
+  display: inline;
+  font-family: "New Rocker";
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+}
+.navbar-links {
+  display: inline;
+}
+.navbar-links a {
+  color: #ff5656;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 5px;
+}
+.navbar-links a:hover {
+  background-color: #ff5656;
+  color: peachpuff;
+}
 /***********************************
 
   Footer Styles
