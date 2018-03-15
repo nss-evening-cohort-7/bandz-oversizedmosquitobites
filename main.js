@@ -8,7 +8,7 @@ var discog = [
     coverArtImg: "",
     songs: [
       "Papa Roach Is Our Primary Influence",
-      "You Must Be Wicked Underground If You Own This",
+      "Who Let The Bugs Out",
       "Under the Fridge",
       "Livin' La Vida Cucaracha"
     ]
@@ -21,7 +21,7 @@ var discog = [
       "I Slept With Someone In OMB And All I Got Was West Nile Virus",
       "I Bite Skins Not Tragedies",
       "Welcome To The Black Plague",
-      "Song Title Here"
+      "I Wrote This Song While Taking A Shower And When I Finished I Went To Turn Off The Water And Realized I Never Turned It On And The Water Was My Tears"
     ]
   },
   {
@@ -30,9 +30,9 @@ var discog = [
     coverArtImg: "",
     songs: [
       "I'm So Antsy",
+      "Citronella Man",
       "Song Title Here",
-      "Song Title Here",
-      "Song Title Here"
+      "I'm Making This Song Title Really Long So The List Will Flex Wrap"
     ]
   }
 ];
@@ -43,7 +43,7 @@ function buildDiscogCard(album) {
   var albumCardString = '<div class="album">';
   albumCardString += '<h2 class="albumtitle">' + album.title + '</h2>';
   albumCardString += '<img src="' + album.coverArtImg + '" class="album-cover">';
-  albumCardString += '<h4 class="releaseyear">' + album.releaseYear + '</h4>';
+  albumCardString += '<h5 class="releaseyear">' + album.releaseYear + '</h5>';
   albumCardString += '<ol class="songlist">';
 
   album.songs.forEach(function (song) {
