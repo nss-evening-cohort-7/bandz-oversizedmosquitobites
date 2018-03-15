@@ -59,3 +59,89 @@ body {
   margin: 10px;
   max-width: 30px;
 }
+/***********************************
+
+  Sticky Footer Members Page
+
+************************************/
+.main-content{
+flex: 1;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/***********************************
+
+  Grid Members Page 
+
+************************************/
+.floatLeft{
+  float: left;
+  width:45%;
+}
+
+.floatRight{
+  float: right;
+  width:45%;
+}
+/***********************************
+
+  Images Members Page 
+
+************************************/
+.img-members{
+  max-width: 100%;
+}
+    
+#members-string{
+  width:75%;
+  margin: auto;
+}
+/***********************************
+
+  h2 and h3 headers Members Page 
+
+************************************/
+.header-members{
+   font-family: "New Rocker";
+   text-align: center;
+}
+
+/***********************************
+
+  Proposed color palette  Members Page
+  If it needs to be reverted to original style,
+  just delete all the code bellow 
+
+************************************/
+body {
+ background:
+   radial-gradient(
+     circle at top left,
+     rgb(12, 0, 5), 10%,
+     rgb(39, 3, 17), 30%,
+     rgb(109, 15, 51), 50%,
+     rgb(173, 47, 78), 80%,
+     rgb(243, 118, 166), 90%,
+     #4b2207 95%
+   );
+   color:white;
+}
+
+.navbar-heading:hover, .header-members:hover, .navbar-links a:hover {
+  color:red;
+}
+
+.navbar-heading, .navbar-links a {
+  color:white;
+}
+
+.navbar-links a:hover {
+  background-color: white;
+}
