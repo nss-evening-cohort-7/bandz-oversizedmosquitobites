@@ -88,6 +88,50 @@ body {
   margin: 10px;
   max-width: 30px;
 }
+
+
+/***********************************
+
+  Discog Page Styles
+
+************************************/
+
+#discography {
+  width: 95%;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.album {
+  margin: 20px;
+  display: inline-flex;
+  width: 400px;
+  padding: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.albumtitle {
+  width: 100%;
+}
+
+.albumcover {
+  width: 100%;
+}
+
+.songlist {
+  text-align: left;
+  width: 100%;
+}
+
+.album h2 {
+  text-align: center;
+}
 /***********************************
 
   Sticky Footer Members Page
