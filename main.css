@@ -1,8 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=New+Rocker|Roboto');
 
 body {
-  background:peachpuff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: Roboto;
+}
+/*****************************************
+  
+  Background color
+
+******************************************/
+body {
+ background:
+   radial-gradient(
+     circle at top left,
+     rgb(12, 0, 5), 10%,
+     rgb(39, 3, 17), 30%,
+     rgb(109, 15, 51), 50%,
+     rgb(173, 47, 78), 80%,
+     rgb(243, 118, 166), 90%,
+     #4b2207 95%
+   );
+   color:white;
 }
 /*****************************************
   
@@ -13,6 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid red;
+  margin: 10px 0;
 }
 .navbar-left {
   display: flex;
@@ -27,21 +48,29 @@ body {
   font-family: "New Rocker";
   margin: 0;
   text-decoration: none;
-  color: #000;
 }
 .navbar-links {
   display: inline;
 }
 .navbar-links a {
-  color: #ff5656;
   font-weight: bold;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 15px;
   padding: 5px;
 }
 .navbar-links a:hover {
-  background-color: #ff5656;
-  color: peachpuff;
+  background-color: white;
+}
+.navbar-heading:hover, .header-members:hover, .navbar-links a:hover {
+  color:red;
+}
+
+.navbar-heading, .navbar-links a {
+  color:white;
+}
+
+.navbar-links a:hover {
+  background-color: white;
 }
 /***********************************
 
@@ -102,4 +131,53 @@ body {
 
 .album h2 {
   text-align: center;
+}
+/***********************************
+
+  Sticky Footer Members Page
+
+************************************/
+.main-content{
+flex: 1;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/***********************************
+
+  Grid Members Page 
+
+************************************/
+.floatLeft{
+  float: left;
+  width:45%;
+}
+
+.floatRight{
+  float: right;
+  width:45%;
+}
+/***********************************
+
+  Images Members Page 
+
+************************************/
+.img-members{
+  max-width: 100%;
+}
+    
+#members-string{
+  margin: 30px 10%;
+}
+/***********************************
+
+  h2 and h3 headers Members Page 
+
+************************************/
+.header-members{
+   font-family: "New Rocker";
+   text-align: center;
 }
