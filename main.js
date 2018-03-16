@@ -1,6 +1,8 @@
 function writeToDom(domString, domId){
-  var myDiv = document.getElementById(domId);
-  myDiv.innerHTML = domString;
+  if (document.getElementById(domId)){
+    var myDiv = document.getElementById(domId);
+    myDiv.innerHTML += domString;
+  }
 }
 
 //merch page 
@@ -55,7 +57,7 @@ function createMerchCard(){
 createMerchCard();
 
 
-
+// members page
 var members = [
 { name:"MOE SKEETO",
 imageURL:"https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b194c1e4a335e5b642ff06d08012ccaa&auto=format&fit=crop&w=1050&q=80",
