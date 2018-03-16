@@ -67,18 +67,19 @@ body {
 
 ************************************/
 
-.discography {
-  max-width: 95%;
+#discography {
+  width: 95%;
   text-align: center;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   display: flex;
+  margin: 0 auto;
 }
 
 .album {
+  margin: 20px;
   display: inline-flex;
   width: 400px;
-  margin: 20px;
   padding: 10px;
   align-content: center;
   flex-wrap: wrap;

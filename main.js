@@ -10,7 +10,9 @@ var discog = [
       "Papa Roach Is Our Primary Influence",
       "Who Let The Bugs Out",
       "Under the Fridge",
-      "Livin' La Vida Cucaracha"
+      "Livin' La Vida Cucaracha",
+      "Lice Lice Baby",
+      "King of Bloodful Drinking"
     ]
   },
   {
@@ -21,7 +23,9 @@ var discog = [
       "I Slept With Someone In OMB And All I Got Was West Nile Virus",
       "I Bite Skins Not Tragedies",
       "Welcome To The Black Plague",
-      "I Wrote This Song While Taking A Shower And When I Finished I Went To Turn Off The Water And Realized I Never Turned It On And The Water Was My Tears"
+      "I Wrote This Song While Taking A Shower And When I Finished I Went To Turn Off The Water And Realized I Never Turned It On And The Water Was My Tears",
+      "Flying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off",
+      "Girl's Not Prey"
     ]
   },
   {
@@ -32,7 +36,8 @@ var discog = [
       "I'm So Antsy",
       "Citronella Man",
       "Song Title Here",
-      "I'm Making This Song Title Really Long So The List Will Flex Wrap"
+      "I'm Making This Song Title Really Long So The List Will Flex Wrap",
+      "Please Buy This Album I Don't Want To Have To Get A Real Job"
     ]
   }
 ];
@@ -66,3 +71,5 @@ function writeToDom(domString, domId) {
   var myDiv = document.getElementById(domId);
   myDiv.innerHTML = domString;
 }
+
+populateDiscogPage(discog);
