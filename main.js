@@ -50,8 +50,8 @@ function createMerchCard(){
       merchProject += "<h3>" + products[p].price + "</p>";
       merchProject += "</div>";
       merchProject += "</div>";
-      writeToDom(merchProject, "merch-page");
-  }  
+    }  
+    writeToDom(merchProject, "merch-page");
 
 }
 createMerchCard();
