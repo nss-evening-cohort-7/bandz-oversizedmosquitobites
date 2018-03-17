@@ -1,3 +1,10 @@
+
+function writeToDom(domString, domId){
+  if (document.getElementById(domId)){
+    var myDiv = document.getElementById(domId);
+    myDiv.innerHTML = domString;
+  }
+}
 // array of objects for discog page
 var discog = [
   {
@@ -44,9 +51,9 @@ var discog = [
 
 function buildDiscogCard(album) {
   var albumCardString = '<div class="album">';
-  albumCardString += '<h2 class="albumtitle">' + album.title + '</h2>';
+  albumCardString += '<h2 class="header center">' + album.title + '</h2>';
   albumCardString += '<img src="' + album.coverArtImg + '" class="album-cover">';
-  albumCardString += '<h5 class="releaseyear">' + album.releaseYear + '</h5>';
+  albumCardString += '<h5 class="header center">' + album.releaseYear + '</h5>';
   albumCardString += '<ol class="songlist">';
 
   album.songs.forEach(function (song) {
@@ -63,13 +70,60 @@ function populateDiscogPage(albumArray) {
   writeToDom(discogString, "discography");
 }
 
-// main writeToDom function -- needs one string of all content to be written
 
-function writeToDom(domString, domId) {
-  var myDiv = document.getElementById(domId);
-  myDiv.innerHTML = domString;
+//merch page 
+var products = [
+  { name:"Socks",
+    size: ['S', 'M', 'L', 'XL' ],
+    description: "Keep your feet away from mosquito bites!",
+    imageURL:"/img/merch/socks.png",
+    price: "$3.99" ,
+   
+  },
+
+  { name:"Hoodie",
+  size: ['S', 'M', 'L', 'XL'],
+  description: "Cover your head with a mosquito hoodie to avoid mosquito bite!",
+  imageURL:"/img/merch/hoodie.png",
+  price: "$8.99" ,
+},
+
+{ name:"Tshirt",
+  size: ['S', 'M', 'L', 'XL'],
+  description: "Show off your buzz with our buzz Tshirt!",
+  imageURL:"/img/merch/tshirt.png",
+  price: "$6.99" ,
+},
+
+{ name:"Hat",
+  size: ['S', 'M', 'L', 'XL'],
+  description: "Rock and Roll with our Mosquito Hats On!",
+  imageURL:"/img/merch/hat.png",
+  price: "$4.99" ,
 }
+]
 
+
+function createMerchCard(){
+  var merchProject ="";
+  for (var p = 0; p < products.length; p++) {
+     merchProject += "<div class = 'display-card'>"
+      merchProject += "<img  class ='img-merch' src= " + products[p].imageURL + ">";
+      merchProject  += "<div class='merchCard'>";
+      merchProject += "<h1 class='header center'>" + products[p].name + "</h1>";
+      merchProject += "<h3 class='header center'>" + products[p].size.join(' ')+ "</h3>";
+      merchProject += "<p>" + products[p].description + "</p>";
+      merchProject += "<h3>" + products[p].price + "</p>";
+      merchProject += "</div>";
+      merchProject += "</div>";
+    }  
+    writeToDom(merchProject, "merch-page");
+
+}
+createMerchCard();
+
+
+// members page
 var members = [
 { name:"MOE SKEETO",
 imageURL:"/img/members/moeskeeto.png",
@@ -100,8 +154,8 @@ function createProjectCards() {
   for (var i = 0; i < members.length; i++) {
       string += "<div class='item'>";
     string += "<img class='img-members' src=" + members[i].imageURL + ">";
-    string += "<h2 class='header-members'>" + members[i].name + "</h2>";
-    string += "<h3 class='header-members'>" + members[i].role + "</h3>";
+    string += "<h2 class='header center'>" + members[i].name + "</h2>";
+    string += "<h3 class='header center'>" + members[i].role + "</h3>";
     string += "<p>" + members[i].bio + "</p>";
     string += "</div>";
     writeToDom(string, "members-string");
