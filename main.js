@@ -111,7 +111,7 @@ function createMerchCard(){
       merchProject += "<img  class ='img-merch' src= " + products[p].imageURL + ">";
       merchProject  += "<div class='merchCard'>";
       merchProject += "<h1 class='header center'>" + products[p].name + "</h1>";
-      merchProject += "<h3 class='header center'>" + products[p].size.join(' ')+ "</h3>";
+      merchProject += "<h3 class='center'>" + products[p].size.join(' ')+ "</h3>";
       merchProject += "<p>" + products[p].description + "</p>";
       merchProject += "<h3>" + products[p].price + "</p>";
       merchProject += "</div>";

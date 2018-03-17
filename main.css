@@ -33,15 +33,16 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid red;
-  margin: 10px 0;
+  line-height: 20px;
 }
 .navbar-left {
   display: flex;
   align-items: center;
 }
 .navbar-logo {
-  max-width: 30px;
+  max-width: 50px;
   margin-right: 15px;
+  margin-left: 15px;
 }
 .navbar-heading {
   display: inline;
@@ -71,6 +72,7 @@ body {
 .navbar-links a:hover {
   background-color: white;
 }
+
 /***********************************
 
   Footer Styles
@@ -79,9 +81,7 @@ body {
 .footer {
   border-top: 2px solid red;
   text-align: center;
-}
-.footer-icons {
-  margin: 10px 0;
+  margin-top: 30px;
 }
 .footer-icons img {
   margin: 10px;
@@ -93,7 +93,6 @@ body {
   Discog Page Styles
 
 ************************************/
-
 #discography {
   width: 95%;
   align-items: flex-start;
@@ -102,9 +101,8 @@ body {
   margin: 0 auto;
   flex-wrap: wrap;
 }
-
 .album {
-  margin: 20px;
+  margin: 0 20px;
   display: inline-flex;
   width: 400px;
   padding: 10px;
@@ -112,12 +110,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .album-cover {
   width: 100%;  
   height: 350px;
 }
-
 .songlist {
   text-align: left;
   width: 100%;
@@ -131,12 +127,12 @@ body {
 .main-content{
 flex: 1;
 }
-
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 /***********************************
 
   Grid Members Page 
@@ -151,6 +147,7 @@ body {
 .item{
  width:40%;
 }
+
 /***********************************
 
   Images Members Page 
@@ -164,6 +161,7 @@ body {
 #members-string{
   margin: 30px 10%;
 }
+
 /***********************************
 
   h2 and h3 headers 
@@ -171,10 +169,12 @@ body {
 ************************************/
 .header {
    font-family: "New Rocker";
-   
 }
  .center{
    text-align: center;
+ }
+ .headerSize{
+   font-size: 48px;
  }
 
 /***********************************
@@ -182,33 +182,24 @@ body {
 Merch Page - Body
 
 ************************************/
-
-
 #merch-page{
     display:flex;
     flex-flow: row wrap;   
+    justify-content: center;
 }
-
 .display-card {
-    width: 35%;
-    margin: auto;
-    margin-top: 5%;
-    /* margin-bottom: 5%;
-    margin-left: 10%; */
-        
+  width: 35%;
 }
-
 .img-merch {
     max-width: 100%;
     height: 315px;
     border-radius: 1em;
 }
-
 /* Index Image Styles */
 .home-image {
   display: block;
   margin: 0 auto;
-  max-width: 25%;
+  max-width: 70%;
 }
 .main-heading {
   font-size: 48px;
@@ -223,17 +214,14 @@ Merch Page - Body
 .main-content {
   margin: 0 auto;
 }
-
 .isSoldOut {
   color: red;
   padding: 0 10px;
 }
-
 .scheduleShow {
   display: inline;
-  
-}
 
+}
 .scheduleCard {
   padding: 10px 10px;
   list-style-type: none;
