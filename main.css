@@ -191,3 +191,32 @@ body {
 .main-heading {
   font-size: 48px;
 }
+
+/***********************************
+
+  schedule page
+
+************************************/
+
+.main-content {
+  margin: 0 auto;
+}
+.header-schedule {
+  font-family:"New Rocker";
+  text-align: center;
+}
+
+.isSoldOut {
+  color: red;
+  padding: 0 10px;
+}
+
+.scheduleShow {
+  display: inline;
+  
+}
+
+.scheduleCard {
+  padding: 10px 10px;
+  list-style-type: none;
+}

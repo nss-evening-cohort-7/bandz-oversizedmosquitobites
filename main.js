@@ -118,3 +118,70 @@ function checkCurrentPage() {
 }
 
 checkCurrentPage();
+
+//schedule page
+
+var schedule = [
+  {date:"5/31",
+  venue:"Mosquito Arena",
+  city: "Mosquitoville",
+  state: "TN",
+  soldout: true
+  },
+
+
+  {date:"5/31",
+  venue:"Mosquito Arena",
+  city: "Mosquitoville",
+  state: "TN",
+  soldout: false,
+  },
+
+ 
+
+  {date:"6/3",
+  venue:"Croachland",
+  city: "Croachville",
+  state: "TN",
+  soldout: true,
+  },
+
+
+  {date:"7/15",
+  venue:"Buzz Auditorium",
+  city: "Netville",
+  state: "TN",
+  soldout: false,
+  },
+
+
+  {date:"8/9",
+  venue:"Mosquito Arena",
+  city: "Croachville",
+  state: "TN",
+  soldout: false,
+  }
+]
+
+function createScheduleProject() {
+  var scheduleProject = "<ul class = 'display-schedule'>";
+
+for(var s = 0; s < schedule.length; s++){
+
+
+     scheduleProject += "<li class='scheduleCard'>";
+     scheduleProject += "<h2 class ='scheduleShow'>" + schedule[s].date + " - "  + schedule[s].venue + ", " 
+   + schedule[s].city + ", " + schedule[s].state;
+  
+     if (schedule[s].soldout) {
+       scheduleProject += "<span class ='isSoldOut'> SOLD OUT </span>"  
+     }
+     scheduleProject += "</h2></li>";
+
+  writeToDom (scheduleProject, 'schedule-page')
+
+}
+scheduleProject += "</ul>";
+}
+createScheduleProject();
+
