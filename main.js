@@ -51,9 +51,9 @@ var discog = [
 
 function buildDiscogCard(album) {
   var albumCardString = '<div class="album">';
-  albumCardString += '<h2 class="albumtitle">' + album.title + '</h2>';
+  albumCardString += '<h2 class="header center">' + album.title + '</h2>';
   albumCardString += '<img src="' + album.coverArtImg + '" class="album-cover">';
-  albumCardString += '<h5 class="releaseyear">' + album.releaseYear + '</h5>';
+  albumCardString += '<h5 class="header center">' + album.releaseYear + '</h5>';
   albumCardString += '<ol class="songlist">';
 
   album.songs.forEach(function (song) {
@@ -110,8 +110,8 @@ function createMerchCard(){
      merchProject += "<div class = 'display-card'>"
       merchProject += "<img  class ='img-merch' src= " + products[p].imageURL + ">";
       merchProject  += "<div class='merchCard'>";
-      merchProject += "<h1>" + products[p].name + "</h1>";
-      merchProject += "<h3>" + products[p].size.join(' ')+ "</h3>";
+      merchProject += "<h1 class='header center'>" + products[p].name + "</h1>";
+      merchProject += "<h3 class='header center'>" + products[p].size.join(' ')+ "</h3>";
       merchProject += "<p>" + products[p].description + "</p>";
       merchProject += "<h3>" + products[p].price + "</p>";
       merchProject += "</div>";
@@ -154,8 +154,8 @@ function createProjectCards() {
   for (var i = 0; i < members.length; i++) {
       string += "<div class='item'>";
     string += "<img class='img-members' src=" + members[i].imageURL + ">";
-    string += "<h2 class='header-members'>" + members[i].name + "</h2>";
-    string += "<h3 class='header-members'>" + members[i].role + "</h3>";
+    string += "<h2 class='header center'>" + members[i].name + "</h2>";
+    string += "<h3 class='header center'>" + members[i].role + "</h3>";
     string += "<p>" + members[i].bio + "</p>";
     string += "</div>";
     writeToDom(string, "members-string");
