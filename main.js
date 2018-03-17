@@ -102,12 +102,7 @@ var members = [
 function createProjectCards() {
   var string = "";
   for (var i = 0; i < members.length; i++) {
-    
-    if (members[i].floats == true) {
-      string += "<div class='floatLeft'>";
-    } else {
-      string += "<div class='floatRight'>";
-    }
+      string += "<div class='item'>";
     string += "<img class='img-members' src=" + members[i].imageURL + ">";
     string += "<h2 class='header-members'>" + members[i].name + "</h2>";
     string += "<h3 class='header-members'>" + members[i].role + "</h3>";
