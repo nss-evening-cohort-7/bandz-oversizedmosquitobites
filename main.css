@@ -95,7 +95,6 @@ body {
 ************************************/
 
 #discography {
-  width: 95%;
   align-items: flex-start;
   justify-content: center;
   display: flex;
@@ -111,16 +110,24 @@ body {
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 
 .album-cover {
   width: 100%;  
-  height: 350px;
+  
 }
 
 .songlist {
-  text-align: left;
-  width: 100%;
+  line-height: 1.5em;
+}
+
+.songlist li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+  padding-right: 2em;
 }
 
 /***********************************
