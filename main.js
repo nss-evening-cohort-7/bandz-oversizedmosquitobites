@@ -1,3 +1,10 @@
+
+function writeToDom(domString, domId){
+  if (document.getElementById(domId)){
+    var myDiv = document.getElementById(domId);
+    myDiv.innerHTML = domString;
+  }
+}
 // array of objects for discog page
 var discog = [
   {
@@ -63,13 +70,60 @@ function populateDiscogPage(albumArray) {
   writeToDom(discogString, "discography");
 }
 
-// main writeToDom function -- needs one string of all content to be written
 
-function writeToDom(domString, domId) {
-  var myDiv = document.getElementById(domId);
-  myDiv.innerHTML = domString;
+//merch page 
+var products = [
+  { name:"Socks",
+    size: ['S', 'M', 'L', 'XL' ],
+    description: "Keep your feet away from mosquito bites!",
+    imageURL:"https://image.spreadshirtmedia.com/image-server/v1/mp/products/P18092423MPC25332326/views/1,width=378,height=378,appearanceId=1,backgroundColor=E8E8E8,version=1497265829/buzz-mosquito-me",
+    price: "$3.99" ,
+   
+  },
+
+  { name:"Hoodie",
+  size: ['S', 'M', 'L', 'XL'],
+  description: "Cover your head with a mosquito hoodie to avoid mosquito bite!",
+  imageURL:"http://www.bilgihocam.com/wp-content/uploads/2015/12/kedi-resimleri-17.jpg",
+  price: "$8.99" ,
+},
+
+{ name:"Tshirt",
+  size: ['S', 'M', 'L', 'XL'],
+  description: "Show off your buzz with our buzz Tshirt!",
+  imageURL:"http://www.bilgihocam.com/wp-content/uploads/2015/12/kedi-resimleri-17.jpg",
+  price: "$6.99" ,
+},
+
+{ name:"Hat",
+  size: ['S', 'M', 'L', 'XL'],
+  description: "Rock and Roll with our Mosquito Hats On!",
+  imageURL:"http://www.bilgihocam.com/wp-content/uploads/2015/12/kedi-resimleri-17.jpg",
+  price: "$4.99" ,
 }
+]
 
+
+function createMerchCard(){
+  var merchProject ="";
+  for (var p = 0; p < products.length; p++) {
+     merchProject += "<div class = 'display-card'>"
+      merchProject += "<img  class ='img-merch' src= " + products[p].imageURL + ">";
+      merchProject  += "<div class='merchCard'>";
+      merchProject += "<h1>" + products[p].name + "</h1>";
+      merchProject += "<h3>" + products[p].size.join(' ')+ "</h3>";
+      merchProject += "<p>" + products[p].description + "</p>";
+      merchProject += "<h3>" + products[p].price + "</p>";
+      merchProject += "</div>";
+      merchProject += "</div>";
+    }  
+    writeToDom(merchProject, "merch-page");
+
+}
+createMerchCard();
+
+
+// members page
 var members = [
 { name:"MOE SKEETO",
 imageURL:"/img/members/moeskeeto.png",
