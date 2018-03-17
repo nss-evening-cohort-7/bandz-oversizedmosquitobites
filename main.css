@@ -134,7 +134,7 @@ body {
 }
 /***********************************
 
-  Sticky Footer Members Page
+  Sticky Footer Page
 
 ************************************/
 .main-content{
@@ -151,14 +151,14 @@ body {
   Grid Members Page 
 
 ************************************/
-.floatLeft{
-  float: left;
-  width:45%;
+#members-string{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
 }
 
-.floatRight{
-  float: right;
-  width:45%;
+.item{
+ width:40%;
 }
 /***********************************
 
@@ -167,6 +167,7 @@ body {
 ************************************/
 .img-members{
   max-width: 100%;
+  
 }
     
 #members-string{
@@ -174,10 +175,10 @@ body {
 }
 /***********************************
 
-  h2 and h3 headers Members Page 
+  h2 and h3 headers Page 
 
 ************************************/
-.header-members{
+.header-members, .albumtitle{
    font-family: "New Rocker";
    text-align: center;
 }
