@@ -3,7 +3,7 @@ var discog = [
   {
     title: "Basement Bugs",
     releaseYear: 1999,
-    coverArtImg: "",
+    coverArtImg: "/img/albums/basementbugs.png",
     songs: [
       "Papa Roach Is Our Primary Influence",
       "Who Let The Bugs Out",
@@ -16,7 +16,7 @@ var discog = [
   {
     title: "I Feel So Small (The Emo Years)",
     releaseYear: 2006,
-    coverArtImg: "",
+    coverArtImg: "/img/albums/ifeelsosmall.png",
     songs: [
       "I Slept With Someone In OMB And All I Got Was West Nile Virus",
       "I Bite Skins Not Tragedies",
@@ -29,7 +29,7 @@ var discog = [
   {
     title: "Malarious",
     releaseYear: 2013,
-    coverArtImg: "",
+    coverArtImg: "/img/albums/malarious.png",
     songs: [
       "I'm So Antsy",
       "Citronella Man",
