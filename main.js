@@ -76,7 +76,7 @@ var products = [
   { name:"Socks",
     size: ['S', 'M', 'L', 'XL' ],
     description: "Keep your feet away from mosquito bites!",
-    imageURL:"https://image.spreadshirtmedia.com/image-server/v1/mp/products/P18092423MPC25332326/views/1,width=378,height=378,appearanceId=1,backgroundColor=E8E8E8,version=1497265829/buzz-mosquito-me",
+    imageURL:"/img/merch/socks.png",
     price: "$3.99" ,
    
   },
@@ -84,21 +84,21 @@ var products = [
   { name:"Hoodie",
   size: ['S', 'M', 'L', 'XL'],
   description: "Cover your head with a mosquito hoodie to avoid mosquito bite!",
-  imageURL:"http://www.bilgihocam.com/wp-content/uploads/2015/12/kedi-resimleri-17.jpg",
+  imageURL:"/img/merch/hoodie.png",
   price: "$8.99" ,
 },
 
 { name:"Tshirt",
   size: ['S', 'M', 'L', 'XL'],
   description: "Show off your buzz with our buzz Tshirt!",
-  imageURL:"http://www.bilgihocam.com/wp-content/uploads/2015/12/kedi-resimleri-17.jpg",
+  imageURL:"/img/merch/tshirt.png",
   price: "$6.99" ,
 },
 
 { name:"Hat",
   size: ['S', 'M', 'L', 'XL'],
   description: "Rock and Roll with our Mosquito Hats On!",
-  imageURL:"http://www.bilgihocam.com/wp-content/uploads/2015/12/kedi-resimleri-17.jpg",
+  imageURL:"/img/merch/hat.png",
   price: "$4.99" ,
 }
 ]
