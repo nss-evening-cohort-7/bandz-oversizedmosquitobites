@@ -182,3 +182,12 @@ body {
    font-family: "New Rocker";
    text-align: center;
 }
+/* Index Image Styles */
+.home-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 25%;
+}
+.main-heading {
+  font-size: 48px;
+}
