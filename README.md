@@ -11,7 +11,7 @@ Create a website for a fake band, using 1 JavaScript file and 1 CSS file.  An ex
 
 #### Specs
 
-To view assignment, please see [the rubric](../blob/master/rubric.md)
+To view assignment, please see [the rubric](../master/rubric.md)
 
 ## How to Run
 1. Clone the repo
